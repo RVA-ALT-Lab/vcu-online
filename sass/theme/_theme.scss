@@ -1,5 +1,24 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.bg-black {
+	background-color: $black;
+}
+
+
+//header
+.header-logo {
+	width: 300px;
+	height: auto;
+	margin: 15px 20px;
+}
+
+
 //home
 #home-hero {
   background-position: center;
@@ -8,4 +27,23 @@
   height: 70vh;
   border-bottom: 10px solid $gold;
   position: relative;
+}
+
+#home-hero  {
+	color: #fff;
+}
+
+#home-hero h1 {	
+	font-size: 3rem;
+	display: inline-block;
+	background-color: rgba(0,0,0,.7);
+	line-height: 3.5rem;
+	padding: 0 20px 0 20px;
+}
+
+#home-hero p {	
+	display: block;
+	background-color: rgba(0,0,0,.7);
+	padding: 20px;
+	margin: 20px 0;
 }

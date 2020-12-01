@@ -18,8 +18,8 @@ if ( get_field('lead_image')):
 	<div class="container">
 		<div class="row">
 			<div class="col-md-7">
-			    <h1>Fluid jumbotron</h1>
-			    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+			    <h1><?php echo get_field('lead_title')?></h1>
+			    <p class="lead"><?php echo get_field('lead_story')?></p>
 			</div>
 	  </div>
 	</div>	
