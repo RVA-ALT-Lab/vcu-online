@@ -1,1 +1,11 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+//home
+#home-hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  border-bottom: 10px solid $gold;
+  position: relative;
+}

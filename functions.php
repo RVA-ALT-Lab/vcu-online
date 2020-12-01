@@ -25,6 +25,7 @@ $understrap_includes = array(
 	'/custom-comments.php',                 // Custom Comments file.
 	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/understrap/understrap/issues/567.
 	'/editor.php',                          // Load Editor functions.
+    '/acf.php',                          // Load acf functions.
 	'/deprecated.php',                      // Load deprecated functions.
 );
 
