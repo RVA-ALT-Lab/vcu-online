@@ -22,6 +22,7 @@ if ( get_field('lead_image')):
 			    	$title = get_field('lead_title');
 			    		echo vcu_online_title_breaker($title);?>
 			    <p class="lead"><?php echo get_field('lead_story');?></p>
+			    <?php echo vcu_online_button_repeater();?>
 			</div>
 	  </div>
 	</div>	

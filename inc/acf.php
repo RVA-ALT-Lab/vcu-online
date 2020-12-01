@@ -16,6 +16,29 @@ function vcu_online_title_breaker($title){
 	return $title;
 }
 
+function vcu_online_button_repeater(){
+	$html = '<div class="hero-buttons">';
+	if( have_rows('buttons') ):
+
+	    // Loop through rows.
+	    while( have_rows('buttons') ) : the_row();
+
+	        // Load sub field value.
+	        $button = get_sub_field('button_title');
+	        $button_url = get_sub_field('button_link');
+	        $html .= "<a class='btn btn-gold' href='{$button_url}'>{$button}</a>";
+	        // Do something...
+	    // End loop.
+	    endwhile;
+	    return $html . '</div>';
+		// No value.
+		else :
+		    // Do something...
+		endif;
+	}
+
+
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
