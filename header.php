@@ -39,9 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 			</h2>
 
-		<?php if ( 'container' === $container ) : ?>
-			<div class="container">
-		<?php endif; ?>
+	
 
 					<!-- Your site title as branding in the menu -->
 
@@ -70,9 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				?>
-			<?php if ( 'container' === $container ) : ?>
-			</div><!-- .container -->
-			<?php endif; ?>
+			
 
 		</nav><!-- .site-navigation -->
 
