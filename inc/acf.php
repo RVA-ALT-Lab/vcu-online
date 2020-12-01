@@ -5,6 +5,17 @@
  * @package UnderStrap
  */
 
+//home hero 
+
+function vcu_online_title_breaker($title){
+	$array = explode ( ' ' , $title );
+	$title = '';
+	foreach ($array as $key => $word) {
+		$title .= '<h1>' .$word . '</h1><br>';
+	}
+	return $title;
+}
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 

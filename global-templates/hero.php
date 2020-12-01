@@ -18,8 +18,10 @@ if ( get_field('lead_image')):
 	<div class="container">
 		<div class="row">
 			<div class="col-md-7">
-			    <h1><?php echo get_field('lead_title')?></h1>
-			    <p class="lead"><?php echo get_field('lead_story')?></p>
+			    <?php 
+			    	$title = get_field('lead_title');
+			    		echo vcu_online_title_breaker($title);?>
+			    <p class="lead"><?php echo get_field('lead_story');?></p>
 			</div>
 	  </div>
 	</div>	
