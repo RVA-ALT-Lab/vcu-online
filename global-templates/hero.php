@@ -24,7 +24,10 @@ if ( get_field('lead_image')):
 			    <p class="lead"><?php echo get_field('lead_story');?></p>
 			    <?php echo vcu_online_button_repeater();?>
 			</div>
-	  </div>
+	 	 </div>
+		 <div class="row secondary-message-row">
+				<?php echo vcu_online_secondary_message();?>
+		 </div>
 	</div>	
 </div>
 

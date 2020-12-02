@@ -38,6 +38,17 @@ function vcu_online_button_repeater(){
 	}
 
 
+//SECONDARY MESSAGE
+	function vcu_online_secondary_message(){
+		$secondary_title = get_field('secondary_title');
+		$secondary_image = get_field('secondary_image')['sizes']['large'];
+		$secondary_message = get_field('secondary_message');
+
+		$html = "<div class='col-md-6'><div class='secondary-message'><h2>{$secondary_title}</h2>{$secondary_message}</div></div>";
+		$html .= "<div class='col-md-6'><div class='secondary-message'><img class='img-fluid' src='{$secondary_image}' alt='Smiling person.'></div></div>";
+		return $html;
+	}
+
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
