@@ -20,15 +20,19 @@ if ( get_field('lead_image')):
 			<div class="col-md-7">
 			    <?php 
 			    	$title = get_field('lead_title');
-			    		echo vcu_online_title_breaker($title);?>
+			    		echo '<header class="entry-header">'.vcu_online_title_breaker($title).'</header>';?>
 			    <p class="lead"><?php echo get_field('lead_story');?></p>
 			    <?php echo vcu_online_button_repeater();?>
 			</div>
-	 	 </div>
+	 	 </div>		
+	</div>	
+</div>
+<div class="wrapper" id="secondary">
+	<div class="container">
 		 <div class="row secondary-message-row">
 				<?php echo vcu_online_secondary_message();?>
 		 </div>
-	</div>	
+	</div>
 </div>
 
 <?php endif;?>
@@ -51,3 +55,4 @@ if ( is_active_sidebar( 'hero' ) || is_active_sidebar( 'statichero' ) || is_acti
 
 	<?php
 endif;
+

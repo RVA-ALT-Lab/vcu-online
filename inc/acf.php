@@ -44,8 +44,8 @@ function vcu_online_button_repeater(){
 		$secondary_image = get_field('secondary_image')['sizes']['large'];
 		$secondary_message = get_field('secondary_message');
 
-		$html = "<div class='col-md-6'><div class='secondary-message'><h2>{$secondary_title}</h2>{$secondary_message}</div></div>";
-		$html .= "<div class='col-md-6'><div class='secondary-message'><img class='img-fluid' src='{$secondary_image}' alt='Smiling person.'></div></div>";
+		$html = "<div class='col-md-6'><div class='secondary-message bg-aqua'><h2>{$secondary_title}</h2>{$secondary_message}</div></div>";
+		$html .= "<div class='col-md-6'><img  src='{$secondary_image}' alt='Smiling person.'></div>";
 		return $html;
 	}
 

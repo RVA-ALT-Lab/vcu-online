@@ -10,6 +10,10 @@ body{
 	background-color: $black;
 }
 
+.bg-aqua {
+	background-color: $aqua;
+}
+
 
 //header and nav
 .header-logo {
@@ -34,11 +38,13 @@ body{
 
 
 //home
+
+//PRIMARY
 #home-hero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 65vh;
+  height: 70vh;
   border-top: 16px solid $gold;
   border-bottom: 16px solid $gold;
   position: relative;
@@ -62,6 +68,34 @@ body{
 	background-color: rgba(0,0,0,.7);
 	padding: 30px;
 	margin: 20px 0;
+}
+
+//SECONDARY
+
+#secondary {
+	padding-top: 40px;
+	background-color: $light-gray;
+}
+
+#secondary .col-md-6 {
+	height: 400px;
+}
+
+.secondary-message {
+	height: 100%;
+	width: 100%;
+	display: block;
+	color: $white;
+	padding: 60px;
+}
+
+.secondary-message h2 {
+	font-size: 3rem;
+}
+
+#secondary img {
+	object-fit: cover;
+	height: 100%;
 }
 
 //buttons 
