@@ -59,7 +59,7 @@ defined( 'ABSPATH' ) || exit;
 		function vcu_online_json_save_point( $path ) {
 		    
 		    // update path
-		    $path = plugin_dir_url(__FILE__) . '/acf-json'; //replace w get_stylesheet_directory() for theme
+		    $path = get_stylesheet_directory(). '/acf-json'; //replace w get_stylesheet_directory() for theme
 		    
 		    
 		    // return
@@ -78,7 +78,7 @@ defined( 'ABSPATH' ) || exit;
 		    
 		    
 		    // append path
-		    $paths[] = plugin_dir_url(__FILE__)  . '/acf-json';//replace w get_stylesheet_directory() for theme
+		    $paths[] = get_stylesheet_directory()  . '/acf-json';//replace w get_stylesheet_directory() for theme
 		    
 		    
 		    // return
